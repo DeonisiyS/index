@@ -1,0 +1,311 @@
+<html>
+<head>
+    
+    
+    <title>S.T.A.L.K.E.R.</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <style>
+    
+      
+	   .container {
+  display: flex;
+  width: 100%;
+  padding: 4% 2%;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+.box {
+  flex: 1;
+  overflow: hidden;
+  transition: .5s;
+  margin: 0 2%;
+  box-shadow: 0 20px 30px rgba(0,0,0,.1);
+  line-height: 0;
+}
+
+.box > img {
+  width: 200%;
+  height: calc(100% - 10vh);
+  object-fit: cover; 
+  transition: .5s;
+}
+
+.box > span {
+  font-size: 3.8vh;
+  display: block;
+  text-align: center;
+  height: 10vh;
+  line-height: 2.6;
+}
+
+.box:hover { flex: 1 1 50%; }
+.box:hover > img {
+  width: 100%;
+  height: 100%;
+}
+      
+        body {margin:0;}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+                 
+               
+h1 { color: #111; font-family: ‘Helvetica Neue’, sans-serif; font-size: 150px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center; }
+
+h2 { color: #111; font-family: ‘Open Sans’, sans-serif; font-size: 30px; font-weight: 300; line-height: 32px; margin: 0 0 72px; text-align: center; }
+h3 { color: #111; font-family: ‘Open Sans’, sans-serif; font-size: 20px; font-weight: 300; line-height: 32px; margin: 0 0 72px; text-align: left; }
+
+p { color: #333333; font-family: «Helvetica Neue»,Arial,sans-serif; font-size: 25px; font-weight: 300; line-height: 1.5625; margin-bottom: 15px; }
+       
+
+#title-Tag-Line {
+  font-size: 20px;
+}
+/* .card-item__bg{
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  display: block;
+  position: relative;
+  margin: 30px auto;
+  transform: translate(0px, 50px);
+  z-index: 5;
+} */
+
+/* form animation starts */
+.form {
+  background: #fff;
+  box-shadow: 100px 30px 60px 0 rgba(90, 116, 148, 0.4);
+  border-radius: 50px;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  left: 0;
+  right: 0;
+    top:2000px;
+  position: absolute;
+  border-top: 5px solid #0e3721;
+/*   z-index: 1; */
+  animation: bounce 1.5s infinite;
+}
+::-webkit-input-placeholder {
+  font-size: 1.3em;
+}
+
+.title{
+  display: block;
+  font-family: sans-serif;
+  margin: 10px auto 5px;
+  width: 300px;
+    
+}
+.termsConditions{
+  margin: 0 auto 5px 80px;
+}
+
+.pageTitle{
+  font-size: 2em;
+  font-weight: bold;
+}
+.secondaryTitle{
+  color: grey;
+}
+
+.name {
+  background-color: #ebebeb;
+  color: black;
+}
+.name:hover {
+  border-bottom: 5px solid #0e3721;
+  height: 30px;
+  width: 380px;
+  transition: ease 0.5s;
+}
+
+.email {
+  background-color: #ebebeb;
+  height: 2em;
+}
+
+.email:hover {
+  border-bottom: 5px solid #0e3721;
+  height: 30px;
+  width: 380px;
+  transition: ease 0.5s;
+}
+
+.message {
+  background-color: #ebebeb;
+  overflow: hidden;
+  height: 10rem;
+}
+
+.message:hover {
+  border-bottom: 5px solid #0e3721;
+  height: 12em;
+  width: 380px;
+  transition: ease 0.5s;
+}
+
+.formEntry {
+  display: block;
+  margin: 30px auto;
+  min-width: 300px;
+  padding: 10px;
+  border-radius: 2px;
+  border: none;
+  transition: all 0.5s ease 0s;
+}
+
+.submit {
+  width: 200px;
+  color: white;
+  background-color: #0e3721;
+  font-size: 20px;
+}
+
+.submit: hover {
+  box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
+  transform: translateY(-3px);
+  width: 300px;
+  border-top: 5px solid #0e3750;
+  border-radius: 0%;
+}
+
+@keyframes bounce {
+  0% {
+    transform : translate(0, 4px);
+  }
+  50% {
+    transform: translate(0, 8px);
+  }
+} 
+        .topbutton {
+width:100px;
+border:2px solid #ccc;
+background:#f7f7f7;
+text-align:center;
+padding:10px;
+position:fixed;
+bottom:50px;
+right:50px;
+cursor:pointer;
+color:#333;
+font-family:verdana;
+font-size:12px;
+border-radius: 5px;
+ -moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+-khtml-border-radius: 5px;
+}
+
+
+    </style>
+    <script>
+         
+    </script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../main.css">
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <form class="form">
+      <div class="pageTitle title">Связь с базой.</div>
+      <div class="secondaryTitle title">Заполните следующие поля.</div>
+      <input type="text" class="name formEntry" placeholder="Имя" />
+      <input type="text" class="email formEntry" placeholder="Email"/>
+      <textarea class="message formEntry" placeholder="Сообщение"></textarea>
+      <input type="checkbox" class="termsConditions" value="Term">
+      <label style="color: grey" for="terms"> Я принимаю <span style="color: #0e3721">условия использования</span> <span style="color: #0e3721"></span>.</label><br>
+      <button class="submit formEntry" onclick="thanks()">отправить</button>
+    </form>
+  </div>
+  <script src="app.js"></script>
+
+
+
+    <div class="container">
+  <div class="box">
+    <img src="https://vgtimes.ru/uploads/gallery/main/144629/1628624736_4.jpg">
+    <span>ИЗБАВЬ</span>
+  </div>
+  <div class="box">
+    <img src="https://vgtimes.ru/uploads/gallery/main/144629/1639035033_wvrfldgiwds.jpg">
+    <span>МИР</span>
+  </div>
+  <div class="box">
+    <img src="https://vgtimes.ru/uploads/gallery/main/144629/1619558768_2.jpg">
+    <span>ОТ</span>
+  </div>
+  <div class="box">
+    <img src="https://vgtimes.ru/uploads/gallery/main/144629/1619715092_35dq5vkhgcg.jpg">
+    <span>ЗОНЫ</span>
+  </div>
+</div>
+  <a href="#" title="Вернуться к началу" class="topbutton">Возвысить</a>
+    <div class="navbar">
+  <a href="#home">ВУЦ</a>
+  <a href="#news">О нас</a>
+  <a href="#contact">Связь с нами</a>
+</div>
+<h1>ВСТУПАЙ В РЯДЫ ДОЛГА!</h1>
+    <p align="center">Свободные сталкеры, ветераны и охотники, вливайтесь в ряды долга! Защитить мир от заразы зоны - наша общая цель и задача!</p>
+    
+<p align="center">Мир со страхом смотрит на расползающуюся заразу зоны,вступи в долг,помоги мирным людям!</p>
+<p align="center">Смертельные аномалии,Опасные мутанты,анархисты и бандиты НЕ остановят долг победоносной поступи ведущей на помощь мирным гражданам всей планеты!</p>
+<p align="center">Сталкер,защити мир от зоны - вступи в долг!</p>
+    </body>
+
+</html>
